@@ -1,0 +1,30 @@
+<section class="content">    
+  
+<table class="table table-bordered table-hover">
+  
+    <tr>
+      <th>device_id</th>
+      <th>device_status</th>
+      <th>last_update</th>
+      <th>last_cars</th>
+      <th>config_version</th>
+      <th>adb_version</th>
+      <th>apkinstall_version</th>
+      <th>adb_version</th>
+      <th>update_version</th>
+    </tr>
+ 
+    <tr ng-repeat="device in devices">
+      <td>{{device.device_id}}</td>
+      <td>{{device.device_status}}</td>
+      <td>{{device.last_update}}</td>
+      <td>{{device.last_cars}}</td>
+      <td>{{device.config_version}}</td>
+      <td>{{device.adb_version}}</td>
+      <td>{{device.apkinstall_version}}</td>
+      <td>{{device.adb_version}}</td>
+      <td>{{device.update_version}}</td>
+    </tr>
+     
+</table>
+</section>

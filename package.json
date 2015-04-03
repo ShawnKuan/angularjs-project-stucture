@@ -1,0 +1,31 @@
+{
+  "name": "wdc",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-contrib-clean": "~0.4",
+    "grunt-contrib-requirejs": "*",
+    "grunt-contrib-jshint": "~0.1",
+    "grunt-contrib-uglify": "~0.1",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-compress": "~0.4",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-watch": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-usemin": "~0.1",
+    "grunt-concurrent": "~0",
+    "grunt-preprocess": "*",
+    "grunt-angular-templates": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD"
+}

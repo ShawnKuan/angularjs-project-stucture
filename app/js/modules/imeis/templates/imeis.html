@@ -1,0 +1,33 @@
+<section class="content">    
+  
+	<table class="table table-bordered table-hover">
+      
+        <tr>
+          <th>config_version</th>
+          <th>daily_seq_num</th>
+          <th>device_id</th>
+          <th>install_app_fail</th>
+          <th>install_app_succ</th>
+          <th>install_phone_last</th>
+          <th>manufacturer</th>
+          <th>model</th>
+          <th>operator_id</th>
+          <th>os_version</th>
+
+        </tr>
+     
+        <tr ng-repeat="imei in imeis">
+          <td>{{imei.config_version}}</td>
+          <td>{{imei.daily_seq_num}}</td>
+          <td>{{imei.device_id}}</td>
+          <td>{{imei.install_app_fail}}</td>
+          <td>{{imei.install_app_succ}}</td>
+          <td>{{imei.install_phone_last}}</td>
+          <td>{{imei.manufacturer}}</td>
+          <td>{{imei.model}}</td>
+          <td>{{imei.operator_id}}</td>
+          <td>{{imei.os_version}}</td>
+        </tr>
+         
+    </table>
+  </section>

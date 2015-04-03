@@ -1,0 +1,19 @@
+{
+  "name": "wdc",
+  "version": "0.0.0",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.16",
+    "lodash": "2.4.1",
+    "angular": "1.2.*",
+    "angular-ui-router": "*",
+    "angular-bootstrap": "0.12.1",
+    "bootstrap-sass": "3.*",
+    "restangular": "1.*",
+    "font-awesome": "*"
+  }
+}

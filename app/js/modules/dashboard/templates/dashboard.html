@@ -1,0 +1,25 @@
+<div ng-class="{'sidebar-collapse': isSidebarCollapse, 'sidebar-open': !isSidebarCollapse}">
+  <div ng-include="'js/modules/dashboard/templates/header.html'"></div>
+  <div ng-include="'js/modules/dashboard/templates/left.html'"></div>
+
+  <div class="content-wrapper">
+  	
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small>Control panel</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+      </ol>
+    </section>
+
+    <div ui-view></div>
+    
+  </div>
+
+
+
+  <div ng-include="'js/modules/dashboard/templates/footer.html'"></div>
+</div>

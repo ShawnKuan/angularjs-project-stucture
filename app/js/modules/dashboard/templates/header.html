@@ -1,0 +1,41 @@
+<header class="main-header">
+    <!-- Logo -->
+    <a ui-sref="dashboard.imeis" class="logo">Shawn Dashboard</a>
+  <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="javascript:;" ng-click="sidebarToggle()" class="sidebar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+            
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu" dropdown>
+            <a href="#" dropdown-toggle>
+              <img src="./img/user-default.png" class="user-image" alt="User Image"/>
+              <span class="hidden-xs">{{user.userAccount}}</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="./img/user-default.png" class="img-circle" alt="User Image" />
+                <p>
+                  {{user.userAccount}} - Manager
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                
+                <div class="pull-right">
+                  <button ng-click="logout()" class="btn btn-default btn-flat">Sign out</button>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
