@@ -5,6 +5,8 @@ require.config({
     angular:                    '../components/angular/angular',
     uiRouter:                   '../components/angular-ui-router/release/angular-ui-router',
     restangular:                '../components/restangular/src/restangular',
+    angularGettext:             '../components/angular-gettext/dist/angular-gettext.min',
+    zh_CN:                      'translations/po/zh_CN',
     uiBootstrap:                '../components/angular-bootstrap/ui-bootstrap' 
 
   },
@@ -20,6 +22,12 @@ require.config({
     },
     restangular: {
         deps: ['angular', 'lodash']
+    },
+    angularGettext: {
+        deps: ['angular']
+    },
+    zh_CN: {
+        deps: ['angularGettext']
     }
   }
 });

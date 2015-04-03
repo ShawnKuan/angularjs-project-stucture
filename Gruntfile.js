@@ -209,6 +209,25 @@ module.exports = function(grunt) {
                     atBegin: true
                 }
             }
+        },
+
+        nggettext_extract: {
+            pot: {
+              files: {
+                'po/template.pot': ['app/js/**/*.js', 'app/**/*.html']
+              }
+            },
+        },
+
+        nggettext_compile: {
+            all: {
+                files: [{
+                    expand: true,
+                    src: 'po/*.po',
+                    dest: 'app/js/translations',
+                    ext: '.js'
+                }]
+            }
         }
     });
 
@@ -226,12 +245,15 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-angular-gettext');
 
 
     // ### define our own tasks
     grunt.registerTask('default', ['jshint']);
     grunt.registerTask('setup', ['copy:setup']);
     grunt.registerTask('template', ['ngtemplates']);
+    grunt.registerTask('po', ['nggettext_extract']);
+    grunt.registerTask('translate', ['nggettext_compile']);
     grunt.registerTask('css', ['sass:devbuild', 'autoprefixer:devbuild']);
     grunt.registerTask('build', [
       'setup',

@@ -14,6 +14,7 @@
     "angular-bootstrap": "0.12.1",
     "bootstrap-sass": "3.*",
     "restangular": "1.*",
+    "angular-gettext": "*",
     "font-awesome": "*"
   }
 }

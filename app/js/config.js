@@ -9,6 +9,10 @@ define([
     angular.module('wdc.config', [])
         .constant('DEFAULT_SETTING', {
             'debug': false,
-            'timeout': 10000
+            'timeout': 10000,
+            'translate' : {
+            	'lang' : 'en',
+            	'debug': false
+            }
         });
 });

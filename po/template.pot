@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: app/js/modules/login/templates/login.html
+msgid "Login"
+msgstr ""
+
+#: app/js/app.js
+msgid "Not Found"
+msgstr ""
+
+#: app/js/modules/login/templates/login.html
+msgid "Password"
+msgstr ""
+
+#: app/js/modules/login/templates/login.html
+msgid "Please Sign In Shawn Dashboard"
+msgstr ""
+
+#: app/js/app.js
+msgid "Service unavailable"
+msgstr ""
+
+#: app/js/modules/login/templates/login.html
+msgid "User Name"
+msgstr ""

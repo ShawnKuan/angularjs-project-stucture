@@ -21,7 +21,8 @@
     "grunt-usemin": "~0.1",
     "grunt-concurrent": "~0",
     "grunt-preprocess": "*",
-    "grunt-angular-templates": "*"
+    "grunt-angular-templates": "*",
+    "grunt-angular-gettext": ""
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

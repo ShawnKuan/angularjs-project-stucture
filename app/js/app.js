@@ -20,6 +20,7 @@ define([
     var module = angular.module('wdc', [
         'ui.router',
         'ui.bootstrap',
+        'gettext',
         'restangular',
         'wdc.template',
         'wdc-module-common',
@@ -74,8 +75,11 @@ define([
         }
     ]);
 
-    module.run(['$rootScope', 'Restangular', '$state', 
-        function($rootScope, Restangular, $state) {
+    module.run(['$rootScope', 'Restangular', '$state', 'gettextCatalog', 'DEFAULT_SETTING', 
+        function($rootScope, Restangular, $state, gettextCatalog, DEFAULT_SETTING) {
+
+            gettextCatalog.setCurrentLanguage(DEFAULT_SETTING.translate.lang);
+            gettextCatalog.debug = DEFAULT_SETTING.translate.debug;
 
             Restangular.addRequestInterceptor(function(element, operation, route, url) { 
                 $rootScope.loading = true;
@@ -89,10 +93,10 @@ define([
 
             Restangular.setErrorInterceptor(function(response, deferred, responseHandler) {
                 if(response.status === 404) {
-                    alert('Not Found');
+                    alert(gettextCatalog.getString('Not Found'));
                 }
                 if(response.status === 503) {
-                    alert('Service unavailable');
+                    alert(gettextCatalog.getString('Service unavailable'));
                 }
                 if(response.status === 401) {
                     $state.go('login');

@@ -5,6 +5,8 @@
 define([
     'lodash',
     'angular',
+    'angularGettext',
+    'zh_CN',
     'uiRouter',
     'uiBootstrap',
 
