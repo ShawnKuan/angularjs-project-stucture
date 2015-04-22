@@ -11,6 +11,9 @@ define([
             'debug': false,
             'timeout': 10000,
             'translate' : {
+                // zh for Chinese translation
+                // en for English translation
+                // no more others right now
             	'lang' : 'en',
             	'debug': false
             }
